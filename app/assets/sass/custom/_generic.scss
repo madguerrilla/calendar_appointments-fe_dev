@@ -1,0 +1,72 @@
+.hide, .hide-to-show {
+  display: none;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+small {
+  font-size: 70%;
+}
+
+.width100 {
+  @include calc(width, $maxpc);
+}
+
+.width50 {
+  @include calc(width, $fiftypc);
+}
+
+.bold, .strong, strong {
+  font-weight: bold;
+}
+
+ol.inline li, ul.inline {
+  float: left;
+}
+
+input, textarea, select, .form-control {
+  &.max {
+    @include calc(width, $maxpc);
+  }
+  &.x-large {
+    @include calc(width, $maxpc / 1.1);
+  }
+  &.large {
+    @include calc(width, $maxpc / 1.3);
+  }
+  &.medium {
+    @include calc(width, $maxpc / 1.6);
+  }
+}
+
+#global-header .header-wrapper .header-global .header-logo .content {
+  margin-left: 0;
+}
+
+#global-header-bar {
+  display: none;
+}
+
+.ui-datepicker-trigger {
+  float: left;
+}
+
+#filter-types {
+  display: none;
+}
+
+.fc-header-title {
+  margin-top: 20px;
+}
+
+.grey {background-color: gray!important;}

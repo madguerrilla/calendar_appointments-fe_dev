@@ -1,0 +1,31 @@
+#user-agent {
+  float: right;
+  .user-name, .user-job {
+    @include font-size(110%);
+    padding-left:10px;
+    padding-right:10px;
+    line-height: 1.4em;
+  }
+  .user-name {
+    color: $pure-white;
+  }
+  .user-job {
+    color: $pure-black;
+    background-color:$t-green;
+    margin-right: 10px;
+  }
+  .user-avatar {
+    background-color:$darker-white;
+    width: 24px;
+    height: 24px;
+    @include vendor-prefixes(border-radius, $border-radius-super);
+    overflow: hidden;
+    img {
+      height: 24px;
+      width: 24px;
+    }
+  }
+  > li {
+    margin: 6px 0;
+  }
+}

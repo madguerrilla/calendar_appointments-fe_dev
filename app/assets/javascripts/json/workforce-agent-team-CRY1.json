@@ -1,0 +1,16 @@
+[
+  {
+    "id": "WCM4",
+    "name": "Scarlett Johansson",
+    "role": "WC",
+    "startTime": "09:00",
+    "endTime": "17:00"
+  },
+  {
+    "id": "WC2",
+    "name": "Tobey Maguire",
+    "role": "WCM",
+    "startTime": "10:00",
+    "endTime": "17:30"
+  }
+]

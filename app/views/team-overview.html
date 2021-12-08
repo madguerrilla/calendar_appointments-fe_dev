@@ -1,0 +1,92 @@
+
+{{<layout}}
+
+{{$pageTitle}}
+DSC - Menu
+{{/pageTitle}}
+{{$globalHeaderText}}
+DSC
+{{/globalHeaderText}}
+
+{{$content}}
+
+<script type='text/javascript'>
+	<!-- set up local data strings passed from route.js -->
+	var bookedBy = '{{ bookedBy }}';
+	var jobcentreID = '{{ jobcentreID }}';
+	console.log('Showing team overview information for: ' + jobcentreID);
+</script>
+
+<div id="calendar-header">
+	<div class="content">
+		<div class="grid-row">
+			<div class="column-two-thirds">
+				<div id="global-breadcrumb" class="header-context">
+					<ol role="breadcrumbs" class="group">
+						<li><a href="/">Home</a></li>
+						<li><a href="#">Jobcentre</a></li>
+					</ol>
+				</div>
+				<h1 id="page-heading" class="heading-xlarge">Team overview</h1>
+			</div>
+			<div class="column-third">
+
+			</div>
+		</div>
+
+	</div>
+</div>
+<main id="content" role="main">
+	<div class="content">
+		<div class="grid-row">
+
+			<div id="calendar-wrapper" style="width:100%; float:left; padding:0 15px;">
+				<div id="select-location" class="form-group" style="margin-top:20px;">
+		      <label class="form-label bold" for="locations">Select a Job Centre</label>
+		    </div>
+
+				<div id="teams-layout" class="clear left" style="width:100%; margin-top:30px;">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist" style="margin-bottom:20px;">
+  </ul>
+
+	<ol class="pagination inline calendar-filter right">
+		<li class="calendar-pagination"><a href="#" class="button" role="button" rel="prev">&lt;</a></li>
+		<li class="calendar-pagination"><a href="#" class="button" role="button" rel="next">&gt;</a></li>
+	</ol>
+
+	<div class="workcoaches-content">
+		<div class="form-group">
+			<label class="form-label bold" for="workcoaches">Select a Work Coach</label>
+			<div id="select-workcoaches">
+
+			</div>
+		</div>
+	</div>
+  <!-- Tab panes -->
+  <div class="tab-content">
+
+  </div>
+<div id="delete">Remove appointment <i class="fa fa-trash-o"></i></div>
+
+</div>
+
+			</div>
+			<div id="pull-out-form" class="column-third hide-to-show" style="margin-top: 242px;">
+				<div class="closeForm"><small>Close <i class="fa fa-times"></i></small></div>
+				{{>includes/appointment_form}}
+			</div>
+
+
+		</div>
+	</div>
+
+</main>
+
+{{>includes/modals}}
+
+{{/content}}
+
+{{/layout}}
+<script src="/public/javascripts/pages/team-overview.js"></script>

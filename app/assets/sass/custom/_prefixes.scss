@@ -1,0 +1,45 @@
+//### Vendor prefixing for shorthand properties ###
+
+//### Calculations ###
+
+@mixin calc($property, $expression) {
+  #{$property}: -moz-calc(#{$expression});
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}
+
+//### Sizing ###
+
+// Font size
+@mixin font-size($size) {
+  font-size: $size;
+}
+
+@mixin full-size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin width($width) {
+  width: $width;
+}
+
+//### Borders ###
+
+@mixin border-bottom-prefixes($thickness, $color) {
+  border-bottom:$thickness solid $color;
+}
+
+//### Border Radius ###
+
+@mixin vendor-prefixes($property, $value) {
+  -webkit-#{$property}: $value;
+  -moz-#{$property}: $value;
+  -ms-#{$property}: $value;
+  -o-#{$property}: $value;
+}
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+  @include vendor-prefixes(border-radius, $radius);
+}

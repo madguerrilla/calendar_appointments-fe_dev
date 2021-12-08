@@ -1,0 +1,23 @@
+[
+  {
+    "id": "CM3",
+    "name": "Bradley Cooper",
+    "role": "CM",
+    "startTime": "09:15",
+    "endTime": "17:45"
+  },
+  {
+    "id": "WC12",
+    "name": "Jim Carrey",
+    "role": "WC",
+    "startTime": "10:00",
+    "endTime": "18:30"
+  },
+  {
+    "id": "TL2",
+    "name": "Keira Knightley",
+    "role": "TL",
+    "startTime": "09:00",
+    "endTime": "18:00"
+  }
+]

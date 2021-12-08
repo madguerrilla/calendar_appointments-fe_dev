@@ -1,0 +1,28 @@
+.modal-list {
+  margin-top: 15px;
+  font-size:1.2em;
+  float: left;
+  width: 100%;
+  li,
+  > div, span, strong {
+    padding-bottom: 10px;
+    list-style: none;
+    clear: both;
+    float: left;
+    width: 100%;
+  }
+  .fiftypc {
+    width:50%!important;
+    float: left;
+  }
+}
+
+.alert {
+  margin: 10px 0;
+}
+
+.modal-content, .modal-content > div {
+  float: left;
+  clear: both;
+  width: 100%;
+}

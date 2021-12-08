@@ -1,0 +1,60 @@
+[
+   {
+      "id":"App003",
+      "bookedBy":"WCM004",
+      "bookedFor":[
+         "WC010"
+      ],
+      "type":{
+         "id":"CC",
+         "type":"External",
+         "name":"Claimant Commitment",
+         "duration":45
+      },
+      "location":{
+         "id":"Croydon",
+         "name":"Croydon",
+         "type":"JC"
+      },
+      "appointmentLocation":null,
+      "customer":{
+         "id":"CLA002",
+         "customerName":"Dawn French",
+         "agentId":"WC010",
+         "agentName":"Johnny Depp"
+      },
+      "startTime":"2015-09-28T16:00",
+      "endTime":"2015-09-28T17:45",
+      "travelTimeBefore":0,
+      "travelTimeAfter":0
+   },
+   {
+      "id":"App004",
+      "bookedBy":"WCM005",
+      "bookedFor":[
+         "WC012"
+      ],
+      "type":{
+         "id":"CC",
+         "type":"External",
+         "name":"Claimant Commitment",
+         "duration":45
+      },
+      "location":{
+         "id":"Croydon",
+         "name":"Croydon",
+         "type":"JC"
+      },
+      "appointmentLocation":null,
+      "customer":{
+         "id":"CLA002",
+         "customerName":"Dawn French",
+         "agentId":"WC010",
+         "agentName":"Johnny Depp"
+      },
+      "startTime":"2015-09-28T13:00",
+      "endTime":"2015-09-28T16:45",
+      "travelTimeBefore":0,
+      "travelTimeAfter":0
+   }
+]

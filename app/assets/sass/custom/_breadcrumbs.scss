@@ -1,0 +1,55 @@
+#global-breadcrumb {
+    background-color: $transparent;
+    max-width: 1020px;
+    margin: 0 auto;
+    z-index: 50;
+}
+@media (max-width: 640px) {
+    #global-breadcrumb {
+    padding: 0 1em;
+}
+}#global-breadcrumb ol {
+    max-width: 960px;
+    margin: 0 30px 0 0;
+    padding: 0.75em 0;
+}
+@media (max-width: 640px) {
+    #global-breadcrumb ol {
+    margin: 0;
+}
+}#global-breadcrumb ol li {
+    font-family: "nta", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.14286;
+    font-weight: 400;
+    text-transform: none;
+    background-image: url(https://assets.digital.cabinet-office.gov.uk/static/separator-cdeb08166e771d0c630c018110044965.png);
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+    float: left;
+    list-style: none;
+    margin-left: 0;
+    margin-right: 0.5em;
+    margin-bottom: 0.4em;
+    padding-right: 1em;
+}
+@media (min-width: 641px) {
+    #global-breadcrumb ol li {
+    font-size: 16px;
+    line-height: 1.25;
+}
+}@media only screen and (-webkit-min-device-pixel-ratio: 2),  only screen and (min--moz-device-pixel-ratio: 2),  only screen and (-o-min-device-pixel-ratio: 20 / 10),  only screen and (min-device-pixel-ratio: 2),  only screen and (min-resolution: 192dpi),  only screen and (min-resolution: 2dppx) {
+    #global-breadcrumb ol li {
+    background-image: url(https://assets.digital.cabinet-office.gov.uk/static/separator-2x-86de166c81b8da1d86155349a4357fc8.png);
+    background-size: 6px 11px;
+}
+}#global-breadcrumb ol li a {
+    color: #0b0c0c;
+}
+#global-breadcrumb ol li strong {
+    font-weight: normal;
+}
+#global-breadcrumb ol li:last-child {
+    background-image: none;
+    margin-right: 0;
+}

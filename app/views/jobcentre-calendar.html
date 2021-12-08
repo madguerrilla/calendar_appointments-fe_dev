@@ -1,0 +1,91 @@
+
+{{<layout}}
+
+{{$pageTitle}}
+DSC - Jobcentre calendar
+{{/pageTitle}}
+{{$globalHeaderText}}
+DSC
+{{/globalHeaderText}}
+
+{{$content}}
+
+<script type='text/javascript'>
+	<!-- set up local data strings passed from route.js -->
+	var jobcentreID = '{{ jobcentreID }}';
+	console.log('Showing team overview information for: ' + jobcentreID);
+</script>
+
+<div id="calendar-header">
+	<div class="content">
+		<div class="grid-row">
+			<div class="column-two-thirds">
+				<div id="global-breadcrumb" class="header-context">
+					<ol role="breadcrumbs" class="group">
+						<li><a href="/">Home</a></li>
+						<li><a href="/team/{{ jobcentreID }}">Jobcentre</a></li>
+						<li><a href="#">Calendar</a></li>
+					</ol>
+				</div>
+				<h1 id="page-heading" class="heading-xlarge">Jobcentre calendar</h1>
+			</div>
+			<div class="column-third">
+				<ol id="filter-dwm" class="group inline calendar-filter hide">
+					<li id="filter-day" class="filter-dwm"><a href="#" rel="agendaDay">Day</a></li>
+					<li id="filter-week" class="active filter-dwm"><a href="#" rel="agendaWeek">Week</a></li>
+					<li id="filter-month" class="filter-dwm"><a href="#" rel="month">Month</a></li>
+				</ol>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<main id="content" role="main">
+	<div class="content">
+		<div class="grid-row">
+			{{>includes/banner_message}}
+			<div class="column-two-thirds">
+				<ul class="hide">
+					<li><a href='/teamcalendar/JC1/T1/'>Jobcentre team calendar page - jobcentre ID JC1, team ID T1 (temporary)</a></li>
+				</ul>
+				<ol id="filter-types" class="group inline calendar-filter" style="margin-top:20px;">
+					<li class="active"><a href="#">All</a></li>
+					<li><a href="#">Appointments</a></li>
+					<li><a href="#">Meetings</a></li>
+					<li><a href="#">Training</a></li>
+					<li><a href="#">Shared</a></li>
+				</ol>
+			</div>
+			<div class="column-third">
+				<ol class="pagination inline calendar-filter">
+					<li class="calendar-pagination-day"><a href="#" class="button" role="button" rel="prev">&lt;</a></li>
+					<li id="filter-today" class="calendar-pagination-day"><a href="#" class="button" role="button" rel="today">Today</a></li>
+					<li class="calendar-pagination-day"><a href="#" class="button" role="button" rel="next">&gt;</a></li>
+				</ol>
+			</div>
+			<div id="calendar-wrapper" style="width:100%; float:left;">
+				<section id="directives-calendar" ng-controller="CalendarCtrl"></section>
+				<div class='calendar-container'>
+					<div id="calendar" ui-calendar="uiConfig.calendar" class="span2 calendar" ng-model="eventSources"></div>
+					<div id="delete">Remove appointment <i class="fa fa-trash-o"></i></div>
+				</div>
+
+
+			</div>
+			<div id="pull-out-form" class="column-third" style="display:none;">
+				<div class="closeForm"><small>Close <i class="fa fa-times"></i></small></div>
+				{{>includes/appointment_form}}
+			</div>
+		</div>
+	</div>
+
+</main>
+
+{{>includes/modals}}
+
+
+{{/content}}
+
+{{/layout}}
+<script src="/public/javascripts/pages/jobcentre-calendar.js"></script>

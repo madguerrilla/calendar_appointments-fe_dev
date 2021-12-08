@@ -1,0 +1,90 @@
+
+{{<layout}}
+
+{{$pageTitle}}
+DSC - Calendar
+{{/pageTitle}}
+{{$globalHeaderText}}
+DSC
+{{/globalHeaderText}}
+
+{{$content}}
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type='text/javascript'>
+	<!-- set up local data strings passed from route.js -->
+	var bookedBy = '{{ bookedBy }}';
+	var bookedFor = '{{ bookedFor }}';
+
+	console.log('Logged User: ' + bookedBy + ', Showing calendar information for: ' + bookedFor);
+
+</script>
+
+<div id="calendar-header">
+	<div class="content">
+		<div class="grid-row">
+			<div class="column-two-thirds">
+				<div id="global-breadcrumb" class="header-context">
+					<ol role="breadcrumbs" class="group">
+						<li><a href="/">Home</a></li>
+						<li><strong><a href="#">Calendar</a></strong></li>
+					</ol>
+				</div>
+				<h1 id="calendar-title" class="heading-xlarge"></h1>
+				<div id="bookedForDiv"></div>
+				<div id="bookedByDiv"></div>
+			</div>
+			<!--<div>Booked By: </div> <div i></div>-->
+			<div class="column-third">
+				<ol id="filter-dwm" class="group inline calendar-filter">
+					<li id="filter-day" class="filter-dwm"><a href="#" rel="agendaDay">Day</a></li>
+					<li id="filter-week" class="active filter-dwm"><a href="#" rel="agendaWeek">Week</a></li>
+					<li id="filter-month" class="filter-dwm"><a href="#" rel="month">Month</a></li>
+				</ol>
+			</div>
+		</div>
+	</div>
+</div>
+<main id="content" role="main">
+	<div class="content">
+		<div class="grid-row">
+			<div class="column-two-thirds">
+				{{>includes/banner_message}}
+				<ol id="filter-types" class="group inline calendar-filter" style="margin-top:20px;">
+					<li class="active"><a href="#">All</a></li>
+					<li><a href="#">Appointments</a></li>
+					<li><a href="#">Meetings</a></li>
+					<li><a href="#">Training</a></li>
+					<li><a href="#">Shared</a></li>
+				</ol>
+
+				<section id="directives-calendar" ng-controller="CalendarCtrl"></section>
+				<div id="calendar" ui-calendar="uiConfig.calendar" class="span8 calendar" ng-model="eventSources"></div>
+				<div id="delete">Remove appointment <i class="fa fa-trash-o"></i></div>
+
+
+			</div>
+			<div class="column-third">
+				<ol class="pagination inline calendar-filter">
+					<li class="calendar-pagination"><a href="#" class="button" role="button" rel="prev">&lt;</a></li>
+					<li id="filter-today" class="calendar-pagination"><a href="#" class="button" role="button" rel="today">This week</a></li>
+					<li class="calendar-pagination"><a href="#" class="button" role="button" rel="next">&gt;</a></li>
+				</ol>
+				{{>includes/appointment_form}}
+				<h4>Quick actions</h4>
+				<ol class="btn-gray">
+					<li><a href="#" class="button" role="button">View team calendar</a></li>
+					<li><a href="#" class="button" role="button">View job centre calendar</a></li>
+					<li><a href="#" class="button" role="button">Search an appointment</a></li>
+				</ol>
+			</div>
+		</div>
+	</div>
+
+</main>
+
+{{>includes/modals}}
+
+{{/content}}
+
+{{/layout}}
+<script src="/public/javascripts/pages/calendar.js"></script>

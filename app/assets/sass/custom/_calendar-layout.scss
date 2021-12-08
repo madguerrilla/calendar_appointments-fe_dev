@@ -1,0 +1,105 @@
+#calendar-header {
+  background-color: $light-gray;
+  @include border-bottom-prefixes(1px, $lighter-black);
+  #filter-dwm {
+    margin-top: 100px;
+    li {
+      font-size: 130%;
+    }
+  }
+}
+
+#calendar {
+  margin-top: 20px;
+}
+
+.closeForm {
+  float: right;
+  cursor: pointer;
+}
+
+th[class^='fc-col'] {
+  cursor: pointer;
+}
+
+.calendar-filter {
+  padding-bottom: 12px;
+  li {
+    margin: 0;
+    padding: 0;
+    a {
+      text-decoration: none;
+      padding: 0 10px 10px;
+    }
+    &.active a {
+      font-weight: bold;
+      color: $pure-black;
+      @include border-bottom-prefixes(5px, $t-green);
+    }
+  }
+}
+
+.pagination.calendar-filter {
+  margin-bottom: 0;
+}
+
+.pagination {
+  margin: 30px 0 15px;
+}
+
+.pagination, .btn-gray {
+  float:left;
+  a.button {
+    &:link, &:hover, &:focus, &:visited {
+      background-color: $button-gray;
+      color:$dark-black;
+    }
+    @include border-bottom-prefixes(2px, $light-black);
+    box-shadow:none;
+    padding: 12px 10px 8px;
+    line-height: 1em;
+  }
+}
+
+#filter-types.calendar-filter {
+  padding-bottom: 14px;
+  @include border-bottom-prefixes(1px, $lighter-black);
+}
+
+.highlighted {
+    background-color:$t-green2;
+    color:$pure-white;
+    text-align: center;
+    margin: 30px 0;
+    padding: 0.5em;
+    font-weight: bold;
+}
+
+.form-groups .column-quarter {
+  padding-right: 0;
+}
+
+.ui-datepicker-trigger{
+    border:none;
+    background:none;
+}
+
+#delete {
+  margin:50px 0;
+  opacity:0.5;
+  font-size: 0.7em;
+  i {
+    font-size: 1.2em;
+  }
+  &:hover {
+    opacity: 1.0;
+  }
+}
+
+.fc-bgevent {
+  background-color: rgba(204, 255, 153, 0.3);;
+}
+
+.holiday {
+  background-color: rgba(255, 0, 0, 0.3);;
+}

@@ -1,0 +1,9 @@
+h1 {
+  margin: 10px 0!important;
+}
+
+h4 {
+  margin:15px 0;
+  font-weight: bold;
+  @include font-size(120%);
+}

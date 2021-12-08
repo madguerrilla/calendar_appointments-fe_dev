@@ -1,0 +1,31 @@
+//### Colours ###
+
+$transparent: transparent;
+
+// White and lighter shades
+$pure-white: #fff;
+$darker-white: darken($pure-white, 20%);
+$light-gray: #f8f8f8;
+
+// Black and darker shades
+$pure-black: #000;
+$dark-black: lighten($pure-black, 20%);
+$light-black: lighten($pure-black, 50%);
+$lighter-black: lighten($pure-black, 80%);
+$button-gray: #dde0e2;
+
+// Green shades
+$t-green: #00bdb7;
+$t-green2: #28A197;
+
+//### Sizing ###
+
+$maxpc: 100%;
+$fiftypc: 50%;
+
+//### Border Radius ###
+
+$border-radius-none: 0px;
+$border-radius-small: 2px;
+$border-radius-large: 4px;
+$border-radius-super: 50px;

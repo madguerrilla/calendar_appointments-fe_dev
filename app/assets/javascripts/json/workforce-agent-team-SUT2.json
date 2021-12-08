@@ -1,0 +1,16 @@
+[
+  {
+    "id": "WC4",
+    "name": "Keith Richards",
+    "role": "WC",
+    "startTime": "09:00",
+    "endTime": "18:00"
+  },
+  {
+    "id": "WC5",
+    "name": "Ben Stiller",
+    "role": "WC",
+    "startTime": "08:15",
+    "endTime": "16:15"
+  }
+]

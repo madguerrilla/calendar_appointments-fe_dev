@@ -1,0 +1,23 @@
+[
+  {
+    "id": "WC1",
+    "name": "Rooney Mara",
+    "role": "WC",
+    "startTime": "09:00",
+    "endTime": "16:00"
+  },
+  {
+    "id": "WC2",
+    "name": "Jennifer Love Hewitt",
+    "role": "WC",
+    "startTime": "09:30",
+    "endTime": "17:00"
+  },
+  {
+    "id": "WC3",
+    "name": "Robert Downey Jr.",
+    "role": "WC",
+    "startTime": "09:00",
+    "endTime": "18:00"
+  }
+]

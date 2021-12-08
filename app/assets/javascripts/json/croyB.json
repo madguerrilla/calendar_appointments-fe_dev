@@ -1,0 +1,31 @@
+[
+   {
+      "id":"App003",
+      "bookedBy":"WC007",
+      "bookedFor":[
+         "WC007"
+      ],
+      "type":{
+         "id":"CC",
+         "type":"External",
+         "name":"Claimant Commitment",
+         "duration":45
+      },
+      "location":{
+         "id":"Croydon",
+         "name":"Croydon",
+         "type":"JC"
+      },
+      "appointmentLocation":null,
+      "customer":{
+         "id":"CLA002",
+         "customerName":"Dawn French",
+         "agentId":"WC007",
+         "agentName":"Johnny Depp"
+      },
+      "startTime":"2015-09-30T15:00",
+      "endTime":"2015-09-30T15:45",
+      "travelTimeBefore":0,
+      "travelTimeAfter":0
+   }
+]

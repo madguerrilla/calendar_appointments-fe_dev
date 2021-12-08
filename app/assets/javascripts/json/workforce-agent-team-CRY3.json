@@ -1,0 +1,23 @@
+[
+  {
+    "id": "WCM3",
+    "name": "Jeremy Renner",
+    "role": "WCM",
+    "startTime": "09:00",
+    "endTime": "17:45"
+  },
+  {
+    "id": "WCM1",
+    "name": "Eva Longoria",
+    "role": "WCM",
+    "startTime": "10:00",
+    "endTime": "18:00"
+  },
+  {
+    "id": "CM2",
+    "name": "Christopher Waltz",
+    "role": "CM",
+    "startTime": "09:00",
+    "endTime": "17:00"
+  }
+]

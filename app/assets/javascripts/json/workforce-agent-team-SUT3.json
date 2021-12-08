@@ -1,0 +1,23 @@
+[
+  {
+    "id": "WC8",
+    "name": "Jennifer Love Hewitt",
+    "role": "WC",
+    "startTime": "09:00",
+    "endTime": "18:00"
+  },
+  {
+    "id": "WC9",
+    "name": "Zooey Deschanel",
+    "role": "WC",
+    "startTime": "08:15",
+    "endTime": "16:15"
+  },
+  {
+    "id": "WC10",
+    "name": "Leonardo DiCaprio",
+    "role": "WC",
+    "startTime": "08:15",
+    "endTime": "16:15"
+  }
+]

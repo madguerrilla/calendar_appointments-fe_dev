@@ -1,0 +1,16 @@
+[
+  {
+    "id": "CM1",
+    "name": "Christina Aguilera",
+    "role": "CM",
+    "startTime": "09:00",
+    "endTime": "17:00"
+  },
+  {
+    "id": "TL3",
+    "name": "Morgan Freeman",
+    "role": "TL",
+    "startTime": "08:00",
+    "endTime": "16:00"
+  }
+]

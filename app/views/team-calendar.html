@@ -1,0 +1,65 @@
+
+{{<layout}}
+
+{{$pageTitle}}
+DSC - Menu
+{{/pageTitle}}
+{{$globalHeaderText}}
+DSC
+{{/globalHeaderText}}
+
+{{$content}}
+
+<script type='text/javascript'>
+	<!-- set up local data strings passed from route.js -->
+	var jobcentreID = '{{ jobcentreID }}';
+	var teamID = '{{ teamID }}';
+	console.log('Showing team calendar information for jobcentre: ' + jobcentreID + ', team: ' + teamID);
+</script>
+
+<div id="calendar-header">
+	<div class="content">
+		<div class="grid-row">
+			<div class="column-two-thirds">
+				<div id="global-breadcrumb" class="header-context">
+					<ol role="breadcrumbs" class="group">
+						<li><a href="/">Home</a></li>
+						<li><a href="/team/{{ jobcentreID }}">Jobcentre</a></li>
+						<li><a href="/jobcentrecalendar/{{ teamID }}">Team</a></li>
+						<li><a href="#">Calendar</a></li>
+					</ol>
+				</div>
+				<h1 id="page-heading" class="heading-xlarge">Team calendar</h1>
+			</div>
+			<div class="column-third">
+				
+			</div>
+		</div>
+
+	</div>
+</div>
+<main id="content" role="main">
+	<div class="content">
+		<div class="grid-row">
+			<div class="column-two-thirds">
+				<p></p>
+				<ul>
+					<li><a href='/calendar/WC1'>Individual's calendar - ID WC1 (temporary)</a></li>
+				</ul>
+
+			</div>
+			<div class="column-third">
+				
+				
+			</div>
+		</div>
+	</div>
+
+</main>
+
+
+
+{{/content}}
+
+{{/layout}}
+<script src="/public/javascripts/pages/team-calendar.js"></script>

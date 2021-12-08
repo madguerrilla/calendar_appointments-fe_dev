@@ -1,0 +1,22 @@
+[
+   {
+      "id":"55e85beea7c8cc6808752b2e",
+      "type":"Claimant Commitment"
+   },
+   {
+      "id":"55e85beea7c8cc6808752b2f",
+      "type":"Identity & Verification"
+   },
+   {
+      "id":"55e85beea7c8cc6808752b30",
+      "type":"Internal Meeting"
+   },
+   {
+      "id":"55e85beea7c8cc6808752b31",
+      "type":"Personal"
+   },
+   {
+      "id":"55e85beea7c8cc6808752b32",
+      "type":"Training"
+   }
+]

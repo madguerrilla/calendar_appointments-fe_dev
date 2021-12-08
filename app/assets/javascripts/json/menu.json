@@ -1,0 +1,117 @@
+[
+  {
+    "id": "WC1",
+    "name": "Rooney Mara",
+    "role": "WC"
+  },
+  {
+    "id": "WC2",
+    "name": "Jennifer Love Hewitt",
+    "role": "WC"
+  },
+  {
+    "id": "WC3",
+    "name": "Robert Downey Jr.",
+    "role": "WC"
+  },
+  {
+    "id": "WC4",
+    "name": "Keith Richards",
+    "role": "WC"
+  },
+  {
+    "id": "WC5",
+    "name": "Ben Stiller",
+    "role": "WC"
+  },
+  {
+    "id": "TL1",
+    "name": "Stephen Hawking",
+    "role": "TL"
+  },
+  {
+    "id": "WC6",
+    "name": "Robert Downey Jr.",
+    "role": "WC"
+  },
+  {
+    "id": "WC7",
+    "name": "Courteney Cox",
+    "role": "WC"
+  },
+  {
+    "id": "TL2",
+    "name": "Keira Knightley",
+    "role": "TL"
+  },
+  {
+    "id": "WC8",
+    "name": "Jennifer Love Hewitt",
+    "role": "WC"
+  },
+  {
+    "id": "WC9",
+    "name": "Zooey Deschanel",
+    "role": "WC"
+  },
+  {
+    "id": "WC10",
+    "name": "Leonardo DiCaprio",
+    "role": "WC"
+  },
+  {
+    "id": "TL3",
+    "name": "Morgan Freeman",
+    "role": "TL"
+  },
+  {
+    "id": "WC11",
+    "name": "Tommy Lee Jones",
+    "role": "WC"
+  },
+  {
+    "id": "WC12",
+    "name": "Jim Carrey",
+    "role": "WC"
+  },
+  {
+    "id": "WC13",
+    "name": "Mark Wahlberg",
+    "role": "WC"
+  },
+  {
+    "id": "CM1",
+    "name": "Christina Aguilera",
+    "role": "CM"
+  },
+  {
+    "id": "CM2",
+    "name": "Christopher Waltz",
+    "role": "CM"
+  },
+  {
+    "id": "CM3",
+    "name": "Bradley Cooper",
+    "role": "CM"
+  },
+  {
+    "id": "WCM1",
+    "name": "Eva Longoria",
+    "role": "WCM"
+  },
+  {
+    "id": "WCM2",
+    "name": "Tobey Maguire",
+    "role": "WCM"
+  },
+  {
+    "id": "WCM3",
+    "name": "Jeremy Renner",
+    "role": "WCM"
+  },
+  {
+    "id": "WCM4",
+    "name": "Scarlett Johansson",
+    "role": "WCM"
+  }
+]
